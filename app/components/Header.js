@@ -13,9 +13,9 @@ export default function Header() {
   }, [pathname]);
 
   const links = [
-    { href: '/buy', label: 'Buy' },
-    { href: '/sell', label: 'Sell' },
-    { href: '/team', label: 'Team' },
+    { href: '/sell', label: 'Sellers' },
+    { href: '/buy', label: 'Buyers' },
+    { href: '/company', label: 'Company' },
     { href: '/contact', label: 'Contact' },
   ];
 
@@ -42,7 +42,7 @@ export default function Header() {
 
           <div className="header__cta">
             <Link href="/contact" className="btn btn--secondary">Sign in</Link>
-            <Link href="/contact" className="btn btn--primary">Connect</Link>
+            <Link href="/contact" className="btn btn--primary">Join KMS</Link>
           </div>
 
           <button
@@ -76,7 +76,7 @@ export default function Header() {
             style={{ marginTop: 8 }}
             onClick={() => setMobileOpen(false)}
           >
-            Connect
+            Join KMS
           </Link>
         </div>
       )}

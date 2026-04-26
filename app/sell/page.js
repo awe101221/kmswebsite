@@ -1,141 +1,152 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Sell to us — KMS Wholesale",
+  title: "For sellers — KMS Wholesale",
   description:
-    "Connect your surplus inventory into the network. KMS gives you instant access to thousands of buyers — fast quotes, fair prices, same-week pickup.",
+    "Unlock new revenue streams for all your inventory. KMS provides distribution channels for surplus and wholesale inventory without sacrificing brand protection or margin.",
 };
-
-const categories = [
-  "Apparel",
-  "Footwear",
-  "Electronics",
-  "Home & garden",
-  "Toys",
-  "HBA & beauty",
-  "Grocery",
-  "Furniture",
-  "Hardware",
-  "Sporting goods",
-  "Books & media",
-  "And more",
-];
 
 export default function SellPage() {
   return (
     <>
-      <section className="page-hero">
+      {/* Hero */}
+      <section className="eyebrow-hero">
         <div className="container">
-          <h1>
-            Connect your inventory
-            <br />
-            into the network.
-          </h1>
-          <p>
-            Plug your surplus into a network of thousands of active buyers.
-            We evaluate fast, price fairly, and move product at scale.
-          </p>
-        </div>
-      </section>
-
-      <section className="content-section">
-        <div className="container">
-          <div className="content-grid">
-            <div className="content-text">
-              <h2>Instant access to the buyer network.</h2>
-              <p>
-                KMS has been connecting surplus inventory with the right
-                buyers for over forty years. From a single pallet to a full
-                warehouse — when you plug in, your inventory reaches
-                thousands of qualified buyers immediately.
-              </p>
-              <ul>
-                <li>Fast, no-obligation quotes — typically within 48 hours</li>
-                <li>Any category: apparel, electronics, home goods, grocery, HBA, and more</li>
-                <li>Any quantity from a single pallet to full truckloads</li>
-                <li>Confidential handling for brand-sensitive inventory</li>
-                <li>Same-week pickup capability from our logistics network</li>
-              </ul>
-              <Link href="/contact" className="btn btn--primary">
-                Connect now <span aria-hidden>→</span>
+          <div className="eyebrow-hero__inner">
+            <span className="eyebrow-hero__label">For sellers</span>
+            <h1>Unlock new revenue streams for all your inventory.</h1>
+            <p>
+              KMS provides new distribution channels for surplus and
+              wholesale inventory, allowing sellers to move product quickly
+              without sacrificing brand protection or margin.
+            </p>
+            <div className="eyebrow-hero__actions">
+              <Link href="/contact" className="btn btn--primary btn--large">
+                Sell on KMS
+              </Link>
+              <Link href="/buy" className="btn btn--secondary btn--large">
+                For buyers
               </Link>
             </div>
-            <div className="content-visual">
-              <div className="content-visual__graphic">
-                <span className="content-visual__graphic-text">Sell</span>
+          </div>
+        </div>
+      </section>
+
+      {/* Pillars */}
+      <section className="pillars" style={{ borderTop: "1px solid var(--border-subtle)" }}>
+        <div className="container">
+          <div className="pillars__header">
+            <h2>Why sellers choose KMS.</h2>
+            <p>Four ways the network turns surplus into revenue.</p>
+          </div>
+
+          <div className="pillars__grid">
+            <div className="pillars__cell">
+              <div className="pillars__index">01</div>
+              <div className="pillars__title">Turn inventory into liquidity</div>
+              <p className="pillars__desc">
+                Convert your existing inventory into cash you can deploy,
+                reinvest, or pocket — typically within 48 hours of evaluation.
+              </p>
+              <Link href="/contact" className="pillars__link">
+                Get started <span className="arrow">→</span>
+              </Link>
+            </div>
+            <div className="pillars__cell">
+              <div className="pillars__index">02</div>
+              <div className="pillars__title">Control where your inventory ends up</div>
+              <p className="pillars__desc">
+                Choose the distribution channels, retailers, and geographies
+                where your product is sold — and where it isn&apos;t.
+              </p>
+              <Link href="/contact" className="pillars__link">
+                Get started <span className="arrow">→</span>
+              </Link>
+            </div>
+            <div className="pillars__cell">
+              <div className="pillars__index">03</div>
+              <div className="pillars__title">Sell with absolute discretion</div>
+              <p className="pillars__desc">
+                The network is only accessible to vetted members — we&apos;ll
+                never publish who buys and sells on KMS.
+              </p>
+              <Link href="/contact" className="pillars__link">
+                Get started <span className="arrow">→</span>
+              </Link>
+            </div>
+            <div className="pillars__cell">
+              <div className="pillars__index">04</div>
+              <div className="pillars__title">Set your price to maximize revenue</div>
+              <p className="pillars__desc">
+                Forty years of pricing data means a fair, competitive offer
+                on every load — backed by buyers ready to move.
+              </p>
+              <Link href="/contact" className="pillars__link">
+                Get started <span className="arrow">→</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="testimonials">
+        <div className="container">
+          <div className="testimonials__header">
+            <h2>Trusted by innovators and industry leaders.</h2>
+          </div>
+
+          <div className="testimonials__grid">
+            <div className="testimonial">
+              <p className="testimonial__quote">
+                We weren&apos;t willing to be associated with off-price
+                markets, and KMS gives us peace of mind regarding buyer
+                identity and product destination.
+              </p>
+              <div className="testimonial__attribution">
+                <span className="testimonial__name">Direct brand seller</span>
+                <span className="testimonial__role">Apparel</span>
+              </div>
+            </div>
+            <div className="testimonial">
+              <p className="testimonial__quote">
+                KMS has enabled discovery of untapped revenue channels and
+                distribution approaches we&apos;d never considered.
+              </p>
+              <div className="testimonial__attribution">
+                <span className="testimonial__name">Wholesale reseller</span>
+                <span className="testimonial__role">Multi-category</span>
+              </div>
+            </div>
+            <div className="testimonial">
+              <p className="testimonial__quote">
+                We needed efficient excess-inventory solutions, and KMS
+                finally delivers the streamlined operations we require.
+              </p>
+              <div className="testimonial__attribution">
+                <span className="testimonial__name">Big-box retailer</span>
+                <span className="testimonial__role">National</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="categories">
-        <div className="container">
-          <div className="categories__header">
-            <h2>What we buy.</h2>
-            <p>If it&apos;s retail, we&apos;re probably interested.</p>
-          </div>
-
-          <div className="categories__grid">
-            {categories.map((name) => (
-              <div key={name} className="categories__item">
-                <span className="categories__item-icon" aria-hidden />
-                <span className="categories__item-name">{name}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="steps">
-        <div className="container">
-          <div className="steps__header">
-            <h2>How selling works.</h2>
-            <p>From first call to final pickup — three steps.</p>
-          </div>
-
-          <div className="steps__grid">
-            {[
-              {
-                step: "1",
-                title: "Tell us what you have",
-                desc: "Send a manifest, photos, or just a description. Our team responds quickly.",
-              },
-              {
-                step: "2",
-                title: "Get a fair offer",
-                desc: "We evaluate using forty years of market data to ensure a competitive price.",
-              },
-              {
-                step: "3",
-                title: "We pick up, you get paid",
-                desc: "We arrange all logistics. Pickup can happen the same week. Payment is fast.",
-              },
-            ].map((item) => (
-              <div key={item.step} className="steps__item">
-                <div className="steps__number tabular">{item.step}</div>
-                <h3>{item.title}</h3>
-                <p>{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
+      {/* CTA */}
       <section className="cta">
         <div className="container">
           <div className="cta__inner">
-            <h2>Ready to connect your inventory?</h2>
-            <p>
-              Get a no-obligation quote and see what your surplus is worth
-              on the network.
-            </p>
-            <div className="cta__actions">
+            <h2>Join the world&apos;s best distribution network.</h2>
+            <p>Apply as a trusted buyer or seller and get started today.</p>
+            <div className="cta__actions cta__actions--multi">
               <Link href="/contact" className="btn btn--primary btn--large">
-                Get a quote
+                Sell on KMS
               </Link>
               <Link href="/buy" className="btn btn--secondary btn--large">
-                Or, browse deals
+                Apply to buy
+              </Link>
+              <Link href="/contact" className="btn btn--secondary btn--large">
+                Apply to sell
               </Link>
             </div>
           </div>

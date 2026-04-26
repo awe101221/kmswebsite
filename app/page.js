@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Icon from "./components/Icon";
 
 export default function Home() {
   return (
@@ -8,224 +7,273 @@ export default function Home() {
       <section className="hero">
         <div className="container">
           <div className="hero__content">
-            <div className="hero__badge">
-              <span className="hero__badge-dot" />
-              Trusted by 1,000+ partners nationwide
-            </div>
-
             <h1 className="hero__title">
-              Connect into
+              Powering the off-price
               <br />
-              the network.
+              wholesale economy.
             </h1>
 
             <p className="hero__subtitle">
-              KMS is the wholesale network where surplus meets demand.
-              Plug in to data-driven deal matching, powered by forty years
-              of market intelligence.
+              KMS is a relationship-native distribution network for the
+              world&apos;s best brands and the buyers who move their inventory.
             </p>
 
             <div className="hero__actions">
-              <Link href="/buy" className="btn btn--primary btn--large">
-                Find deals
+              <Link href="/contact" className="btn btn--primary btn--large">
+                Join KMS
               </Link>
-              <Link href="/sell" className="btn btn--secondary btn--large">
-                Sell inventory
+              <Link href="/company" className="btn btn--secondary btn--large">
+                Learn more
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Stats */}
-      <section className="stats">
+      {/* Value prop */}
+      <section className="value-band">
         <div className="container">
-          <div className="stats__grid">
-            {[
-              { number: "$2B+", label: "Transactions completed" },
-              { number: "40+", label: "Years of market data" },
-              { number: "1M+", label: "Sq ft, single facility" },
-              { number: "1,000s", label: "Connected partners" },
-            ].map((stat) => (
-              <div key={stat.label} className="stats__item">
-                <div className="stats__number tabular">{stat.number}</div>
-                <div className="stats__label">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Bento — two sides */}
-      <section className="bento">
-        <div className="container">
-          <div className="bento__header">
-            <h2>One network, two sides.</h2>
+          <div className="value-band__header">
+            <h2>Where the world&apos;s best brands meet the world&apos;s best retailers.</h2>
             <p>
-              Whether you&apos;re sourcing deals or moving surplus — plug in
-              and let the network work for you.
+              Trusted infrastructure built for off-price scale, speed, and
+              control — backed by forty years of relationships.
             </p>
           </div>
 
-          <div className="bento__grid">
-            <div className="bento__cell">
-              <div className="bento__cell-label">For buyers</div>
-              <h3>Deals matched to your categories.</h3>
-              <p>
-                Tell us what you need. Our platform surfaces relevant
-                inventory across 50+ categories — tuned to your business.
+          <div className="value-band__grid">
+            <div className="value-band__cell">
+              <div className="value-band__metric tabular">1,000+</div>
+              <div className="value-band__title">Connected partners</div>
+              <p className="value-band__desc">
+                Leading brands and retailers move inventory through KMS with
+                built-in controls and brand protection.
               </p>
-              <ul className="bento__features">
-                <li>Category-specific deal matching</li>
-                <li>Daily new inventory from top-tier brands</li>
-                <li>Up to 70% below retail pricing</li>
-                <li>Dedicated account management</li>
-              </ul>
-              <Link href="/buy" className="btn btn--ghost">
-                Explore deals <span className="arrow">→</span>
-              </Link>
             </div>
-
-            <div className="bento__cell">
-              <div className="bento__cell-label">For sellers</div>
-              <h3>Your inventory, instantly connected.</h3>
-              <p>
-                Connect your surplus into a network of thousands of active
-                buyers. Fast quotes, fair prices, faster pickup.
+            <div className="value-band__cell">
+              <div className="value-band__metric tabular">$2B+</div>
+              <div className="value-band__title">Transactions completed</div>
+              <p className="value-band__desc">
+                Trusted by buyers large and small, from Fortune 500 retailers
+                to independent operators across every channel.
               </p>
-              <ul className="bento__features">
-                <li>Instant access to the buyer network</li>
-                <li>48-hour quote turnaround</li>
-                <li>Any category, any quantity</li>
-                <li>Confidential brand partnerships</li>
-              </ul>
-              <Link href="/sell" className="btn btn--ghost">
-                Start selling <span className="arrow">→</span>
-              </Link>
             </div>
-
-            <div className="bento__cell bento__cell--metric">
-              <div className="bento__cell-label">Buyer network</div>
-              <h3 className="tabular">50+</h3>
-              <p>Active categories with daily new arrivals matched to your buying profile.</p>
-            </div>
-
-            <div className="bento__cell bento__cell--metric">
-              <div className="bento__cell-label">Seller network</div>
-              <h3 className="tabular">97%</h3>
-              <p>Partner retention. Once you connect, you stay connected.</p>
+            <div className="value-band__cell">
+              <div className="value-band__metric tabular">40 yrs</div>
+              <div className="value-band__title">Of market intelligence</div>
+              <p className="value-band__desc">
+                Where established brands and global retailers connect through
+                trusted, intelligent inventory distribution.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Features */}
-      <section className="features">
+      {/* Megastats */}
+      <section className="megastats">
         <div className="container">
-          <div className="features__header">
-            <h2>Built on forty years of connections.</h2>
+          <div className="megastats__grid">
+            <div className="megastats__item">
+              <div className="megastats__num tabular">14K+</div>
+              <div className="megastats__label">Posted listings</div>
+            </div>
+            <div className="megastats__item">
+              <div className="megastats__num tabular">$12B+</div>
+              <div className="megastats__label">Total MSRP moved</div>
+            </div>
+            <div className="megastats__item">
+              <div className="megastats__num tabular">50+</div>
+              <div className="megastats__label">Active categories</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Sellers section */}
+      <section className="pillars">
+        <div className="container">
+          <div className="pillars__header">
+            <span className="eyebrow">For sellers</span>
+            <h2 style={{ marginTop: 12 }}>New revenue streams for all types of inventory.</h2>
             <p>
-              Our network isn&apos;t just data — it&apos;s relationships.
-              Decades of trust, market knowledge, and operational excellence.
+              Move surplus, closeouts, and wholesale inventory without
+              sacrificing brand protection or margin.
             </p>
           </div>
 
-          <div className="features__grid">
-            {[
-              {
-                icon: "link",
-                title: "Deep relationships",
-                desc: "Direct connections with retailers, manufacturers, and distributors you won't find on any marketplace.",
-              },
-              {
-                icon: "barChart",
-                title: "Market intelligence",
-                desc: "Forty years of pricing data and trend analysis power smarter decisions on every transaction.",
-              },
-              {
-                icon: "zap",
-                title: "Speed to market",
-                desc: "From quote to pickup in days, not weeks. Our 1M+ sq ft facility handles any volume.",
-              },
-              {
-                icon: "shield",
-                title: "Brand protection",
-                desc: "Confidential handling for brands that need controlled distribution and discretion.",
-              },
-              {
-                icon: "globe",
-                title: "National scale",
-                desc: "Operations spanning coast to coast with logistics support for any size shipment.",
-              },
-              {
-                icon: "users",
-                title: "Dedicated support",
-                desc: "A named account manager for every partner. Real people, real answers, every time.",
-              },
-            ].map((feature) => (
-              <div key={feature.title} className="features__item">
-                <div className="features__item-icon">
-                  <Icon name={feature.icon} size={16} />
-                </div>
-                <h3>{feature.title}</h3>
-                <p>{feature.desc}</p>
-              </div>
-            ))}
+          <div className="pillars__grid">
+            <div className="pillars__cell">
+              <div className="pillars__index">01</div>
+              <div className="pillars__title">Turn inventory into liquidity</div>
+              <p className="pillars__desc">
+                Convert existing inventory into cash you can deploy,
+                reinvest, or pocket — typically within 48 hours.
+              </p>
+              <Link href="/sell" className="pillars__link">
+                Get started <span className="arrow">→</span>
+              </Link>
+            </div>
+            <div className="pillars__cell">
+              <div className="pillars__index">02</div>
+              <div className="pillars__title">Control where your inventory ends up</div>
+              <p className="pillars__desc">
+                Choose the distribution channels, retailers, and geographies
+                where your product is sold.
+              </p>
+              <Link href="/sell" className="pillars__link">
+                Get started <span className="arrow">→</span>
+              </Link>
+            </div>
+            <div className="pillars__cell">
+              <div className="pillars__index">03</div>
+              <div className="pillars__title">Sell with absolute discretion</div>
+              <p className="pillars__desc">
+                Our network is only accessible to vetted buyers — we&apos;ll
+                never publish who buys and sells on KMS.
+              </p>
+              <Link href="/sell" className="pillars__link">
+                Get started <span className="arrow">→</span>
+              </Link>
+            </div>
+            <div className="pillars__cell">
+              <div className="pillars__index">04</div>
+              <div className="pillars__title">Set your price, maximize revenue</div>
+              <p className="pillars__desc">
+                Forty years of pricing data means a competitive offer on
+                every load — backed by buyers ready to move.
+              </p>
+              <Link href="/sell" className="pillars__link">
+                Get started <span className="arrow">→</span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* How it works */}
-      <section className="steps">
+      {/* Buyers section */}
+      <section className="pillars" style={{ borderTop: "1px solid var(--border-subtle)" }}>
         <div className="container">
-          <div className="steps__header">
-            <h2>How it works.</h2>
-            <p>Three steps to connect with the right inventory — or the right buyer.</p>
+          <div className="pillars__header">
+            <span className="eyebrow">For buyers</span>
+            <h2 style={{ marginTop: 12 }}>Inventory intelligence at off-price scale.</h2>
+            <p>
+              Access wholesale and surplus inventory from brands consumers
+              love — matched to your categories, daily.
+            </p>
           </div>
 
-          <div className="steps__grid">
-            {[
-              {
-                step: "1",
-                title: "Connect",
-                desc: "Reach out with what you need or what you want to move. We plug you into the network.",
-              },
-              {
-                step: "2",
-                title: "Match",
-                desc: "Our team uses forty years of market data to match you with the right deals or buyers.",
-              },
-              {
-                step: "3",
-                title: "Transact",
-                desc: "Close deals with confidence. We handle logistics, paperwork, and everything between.",
-              },
-            ].map((item) => (
-              <div key={item.step} className="steps__item">
-                <div className="steps__number tabular">{item.step}</div>
-                <h3>{item.title}</h3>
-                <p>{item.desc}</p>
-              </div>
-            ))}
+          <div className="pillars__grid">
+            <div className="pillars__cell">
+              <div className="pillars__index">01</div>
+              <div className="pillars__title">Products from the world&apos;s best brands</div>
+              <p className="pillars__desc">
+                Get access to wholesale and surplus inventory from brands
+                consumers love — from mass market to designer.
+              </p>
+              <Link href="/buy" className="pillars__link">
+                Get started <span className="arrow">→</span>
+              </Link>
+            </div>
+            <div className="pillars__cell">
+              <div className="pillars__index">02</div>
+              <div className="pillars__title">Discover the next big thing</div>
+              <p className="pillars__desc">
+                Identify trending brands and hero SKUs through forty years
+                of category and pricing data.
+              </p>
+              <Link href="/buy" className="pillars__link">
+                Get started <span className="arrow">→</span>
+              </Link>
+            </div>
+            <div className="pillars__cell">
+              <div className="pillars__index">03</div>
+              <div className="pillars__title">Support to hit the ground running</div>
+              <p className="pillars__desc">
+                The expertise and logistics you need for a seamless
+                transaction — from quote to pickup.
+              </p>
+              <Link href="/buy" className="pillars__link">
+                Get started <span className="arrow">→</span>
+              </Link>
+            </div>
+            <div className="pillars__cell">
+              <div className="pillars__index">04</div>
+              <div className="pillars__title">An exclusive distribution network</div>
+              <p className="pillars__desc">
+                A network of individually vetted, high-caliber buyers and
+                sellers — no marketplace noise.
+              </p>
+              <Link href="/buy" className="pillars__link">
+                Get started <span className="arrow">→</span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* CTA */}
+      {/* Testimonials */}
+      <section className="testimonials">
+        <div className="container">
+          <div className="testimonials__header">
+            <h2>What our partners are saying.</h2>
+            <p>Trusted by the world&apos;s top brands and retailers.</p>
+          </div>
+
+          <div className="testimonials__grid">
+            <div className="testimonial">
+              <p className="testimonial__quote">
+                We weren&apos;t willing to be associated with off-price
+                markets, and KMS gives us peace of mind regarding buyer
+                identity and product destination.
+              </p>
+              <div className="testimonial__attribution">
+                <span className="testimonial__name">Direct brand seller</span>
+                <span className="testimonial__role">Apparel</span>
+              </div>
+            </div>
+            <div className="testimonial">
+              <p className="testimonial__quote">
+                KMS has enabled discovery of untapped revenue channels and
+                distribution approaches we&apos;d never considered.
+              </p>
+              <div className="testimonial__attribution">
+                <span className="testimonial__name">Wholesale reseller</span>
+                <span className="testimonial__role">Multi-category</span>
+              </div>
+            </div>
+            <div className="testimonial">
+              <p className="testimonial__quote">
+                We needed efficient excess-inventory solutions, and KMS
+                finally delivers the streamlined operations we require.
+              </p>
+              <div className="testimonial__attribution">
+                <span className="testimonial__name">Big-box retailer</span>
+                <span className="testimonial__role">National</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Closing CTA */}
       <section className="cta">
         <div className="container">
           <div className="cta__inner">
-            <h2>Ready to connect?</h2>
+            <h2>The future of off-price wholesale is connected.</h2>
             <p>
-              Whether you&apos;re buying or selling, KMS is your competitive
-              advantage. Plug into the network.
+              Apply as a trusted buyer or seller and plug into the network
+              today.
             </p>
-            <div className="cta__actions">
+            <div className="cta__actions cta__actions--multi">
               <Link href="/contact" className="btn btn--primary btn--large">
-                Get started
+                Join KMS
+              </Link>
+              <Link href="/buy" className="btn btn--secondary btn--large">
+                Apply to buy
               </Link>
               <Link href="/sell" className="btn btn--secondary btn--large">
-                Get a quote
+                Apply to sell
               </Link>
             </div>
           </div>

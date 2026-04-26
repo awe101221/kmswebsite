@@ -17,20 +17,20 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="footer__heading">Network</h4>
+            <h4 className="footer__heading">Get started</h4>
             <ul className="footer__links">
-              <li><Link href="/buy">Buy</Link></li>
-              <li><Link href="/sell">Sell</Link></li>
-              <li><Link href="/team">Team</Link></li>
+              <li><Link href="/buy">Apply to buy</Link></li>
+              <li><Link href="/sell">Apply to sell</Link></li>
+              <li><Link href="/contact">Join KMS</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="footer__heading">Company</h4>
             <ul className="footer__links">
-              <li><Link href="/team">About</Link></li>
-              <li><Link href="/contact">Contact</Link></li>
-              <li><Link href="/contact">Support</Link></li>
+              <li><Link href="/company">About</Link></li>
+              <li><Link href="/contact">Contact us</Link></li>
+              <li><Link href="/contact">Careers</Link></li>
             </ul>
           </div>
 
