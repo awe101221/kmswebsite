@@ -7,19 +7,19 @@ const rand = (i) => {
 function generateDots() {
   const dots = [];
   let i = 0;
-  for (let y = 320; y < 600; y += 7) {
-    for (let x = 60; x < 1140; x += 7) {
+  for (let y = 30; y < 580; y += 7) {
+    for (let x = 30; x < 1170; x += 7) {
       i++;
-      const dx = (x - 600) / 360;
-      const dy = (y - 480) / 200;
+      const dx = (x - 600) / 540;
+      const dy = (y - 300) / 280;
       const r = Math.sqrt(dx * dx + dy * dy);
       if (r > 1) continue;
-      if (rand(i) > 0.5) continue;
+      if (rand(i) > 0.55) continue;
 
       const ox = (rand(i + 1000) - 0.5) * 4;
       const oy = (rand(i + 2000) - 0.5) * 4;
-      const opacity = 0.2 + rand(i + 3000) * 0.45 * (1 - r * 0.45);
-      const size = 1.2 + rand(i + 4000) * 0.7;
+      const opacity = 0.18 + rand(i + 3000) * 0.4 * (1 - r * 0.5);
+      const size = 1.1 + rand(i + 4000) * 0.6;
 
       dots.push({ x: x + ox, y: y + oy, opacity, size });
     }
@@ -30,10 +30,10 @@ function generateDots() {
 const DOTS = generateDots();
 
 const ARCS = [
-  { x1: 240, y1: 460, x2: 880, y2: 510, delay: 0 },
-  { x1: 520, y1: 380, x2: 760, y2: 560, delay: 2.6 },
-  { x1: 360, y1: 540, x2: 920, y2: 430, delay: 5.2 },
-  { x1: 660, y1: 470, x2: 300, y2: 540, delay: 7.8 },
+  { x1: 220, y1: 380, x2: 920, y2: 280, delay: 0 },
+  { x1: 540, y1: 220, x2: 760, y2: 470, delay: 2.6 },
+  { x1: 360, y1: 460, x2: 980, y2: 360, delay: 5.2 },
+  { x1: 700, y1: 320, x2: 280, y2: 420, delay: 7.8 },
 ];
 
 function arcPath(a) {
@@ -50,13 +50,6 @@ export default function ShipmentMap() {
       preserveAspectRatio="xMidYMid slice"
       aria-hidden
     >
-      <defs>
-        <linearGradient id="arc-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stopColor="#00AEEF" />
-          <stop offset="100%" stopColor="#FF6B35" />
-        </linearGradient>
-      </defs>
-
       <g>
         {DOTS.map((d, i) => (
           <circle
@@ -64,7 +57,7 @@ export default function ShipmentMap() {
             cx={d.x}
             cy={d.y}
             r={d.size}
-            fill="#00AEEF"
+            fill="#9CA3AF"
             opacity={d.opacity}
           />
         ))}

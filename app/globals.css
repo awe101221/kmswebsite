@@ -535,16 +535,13 @@ main { display: block; }
 }
 
 /* ===========================
-   Hero — marketing, with shipment map background
+   Hero — marketing, with subtle shipment-map backdrop
    =========================== */
 .hero {
   position: relative;
-  padding: var(--space-20) 0 var(--space-24);
-  min-height: 720px;
+  padding: var(--space-20) 0 var(--space-12);
   background: var(--bg-app);
   overflow: hidden;
-  display: flex;
-  align-items: flex-start;
 }
 
 .hero::before {
@@ -552,9 +549,9 @@ main { display: block; }
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(80% 60% at 50% 0%, var(--accent-50) 0%, transparent 60%);
+    radial-gradient(80% 60% at 50% 0%, var(--bg-subtle) 0%, transparent 60%);
   pointer-events: none;
-  opacity: 0.5;
+  opacity: 0.6;
   z-index: 0;
 }
 
@@ -571,7 +568,7 @@ main { display: block; }
 }
 
 /* ===========================
-   Shipment map (animated dotted globe behind hero)
+   Shipment map — quiet grayscale backdrop
    =========================== */
 .shipment-map {
   position: absolute;
@@ -581,55 +578,54 @@ main { display: block; }
   pointer-events: none;
   user-select: none;
   z-index: 1;
-  -webkit-mask-image: linear-gradient(to bottom, transparent 48%, black 70%, black 96%, transparent 100%);
-          mask-image: linear-gradient(to bottom, transparent 48%, black 70%, black 96%, transparent 100%);
+  opacity: 0.55;
+  -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, black 30%, transparent 95%);
+          mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, black 30%, transparent 95%);
 }
 
 .shipment-map__path {
   fill: none;
-  stroke: url(#arc-gradient);
-  stroke-width: 1.5;
+  stroke: #9CA3AF;
+  stroke-width: 1;
   stroke-linecap: round;
   stroke-dasharray: 100;
   stroke-dashoffset: 100;
   opacity: 0;
   animation: shipment-arc 10s linear infinite;
-  filter: drop-shadow(0 0 4px rgba(0, 174, 239, 0.35));
 }
 
 @keyframes shipment-arc {
   0%   { stroke-dashoffset: 100; opacity: 0; }
-  8%   { opacity: 1; }
-  55%  { stroke-dashoffset: 0;   opacity: 1; }
-  92%  { stroke-dashoffset: -100; opacity: 1; }
+  8%   { opacity: 0.7; }
+  55%  { stroke-dashoffset: 0;   opacity: 0.7; }
+  92%  { stroke-dashoffset: -100; opacity: 0.5; }
   100% { stroke-dashoffset: -100; opacity: 0; }
 }
 
 .shipment-map__endpoint {
-  fill: var(--bg-surface);
-  stroke-width: 1.5;
+  fill: var(--bg-app);
+  stroke: #6B7280;
+  stroke-width: 1.2;
   opacity: 0;
   animation: endpoint-pulse 10s linear infinite;
 }
-.shipment-map__endpoint--start { stroke: #00AEEF; }
-.shipment-map__endpoint--end   { stroke: #FF6B35; }
 
 @keyframes endpoint-pulse {
   0%, 100% { opacity: 0; transform: scale(1); transform-origin: center; }
-  6%       { opacity: 1; }
-  20%      { transform: scale(1.6); opacity: 1; }
-  35%      { transform: scale(1); opacity: 1; }
-  92%      { opacity: 1; }
+  6%       { opacity: 0.7; }
+  20%      { transform: scale(1.5); opacity: 0.7; }
+  35%      { transform: scale(1); opacity: 0.7; }
+  92%      { opacity: 0.7; }
 }
 
 @media (max-width: 768px) {
   .shipment-map { display: none; }
-  .hero { min-height: auto; padding: var(--space-16) 0 var(--space-12); }
+  .hero { padding: var(--space-16) 0 var(--space-12); }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .shipment-map__path,
-  .shipment-map__endpoint { animation: none; opacity: 0.5; stroke-dashoffset: 0; }
+  .shipment-map__endpoint { animation: none; opacity: 0.4; stroke-dashoffset: 0; }
 }
 
 .hero__badge {
