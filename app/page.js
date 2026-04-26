@@ -1,10 +1,12 @@
 import Link from "next/link";
+import ShipmentMap from "./components/ShipmentMap";
 
 export default function Home() {
   return (
     <>
       {/* Hero */}
       <section className="hero">
+        <ShipmentMap />
         <div className="container">
           <div className="hero__content">
             <h1 className="hero__title">
