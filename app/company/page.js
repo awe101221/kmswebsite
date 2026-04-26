@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Company — KMS Wholesale",
+  title: "Company — kms.deals",
   description:
-    "KMS is a relationship-native distribution network. Forty years of connecting surplus inventory with the buyers who need it.",
+    "kms.deals is a relationship-native distribution network. Forty years of connecting surplus inventory with the buyers who need it.",
 };
 
 const avatarGradients = [
@@ -56,13 +56,13 @@ export default function CompanyPage() {
       name: "Kevin Schimmel",
       role: "President & CEO",
       initials: "KS",
-      bio: "Kevin has led KMS for over two decades, building it into one of the nation's most trusted wholesale distribution networks.",
+      bio: "Kevin has led kms.deals for over two decades, building it into one of the nation's most trusted wholesale distribution networks.",
     },
     {
       name: "Matt Schimmel",
       role: "Vice President",
       initials: "MS",
-      bio: "Matt oversees day-to-day operations and key vendor relationships, keeping KMS ahead of industry trends.",
+      bio: "Matt oversees day-to-day operations and key vendor relationships, keeping kms.deals ahead of industry trends.",
     },
     {
       name: "Steve Schimmel",
@@ -102,7 +102,7 @@ export default function CompanyPage() {
               <span className="eyebrow">Our mission</span>
               <h2 style={{ marginTop: 12 }}>Built on family. Driven by data.</h2>
               <p>
-                KMS began over forty years ago as a small family operation.
+                The company behind kms.deals began over forty years ago as a small family operation.
                 Today, we operate out of a 1,000,000+ square-foot facility
                 in Westland, Michigan — one of the largest wholesale
                 distribution centers in the Midwest.
@@ -129,7 +129,7 @@ export default function CompanyPage() {
           <div className="pillars__header">
             <span className="eyebrow">What we believe</span>
             <h2 style={{ marginTop: 12 }}>How we run the network.</h2>
-            <p>Four principles that have guided KMS since day one.</p>
+            <p>Four principles that have guided kms.deals since day one.</p>
           </div>
 
           <div className="pillars__grid">

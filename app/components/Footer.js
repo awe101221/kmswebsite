@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Wordmark from './Wordmark';
 
 export default function Footer() {
   return (
@@ -7,8 +8,7 @@ export default function Footer() {
         <div className="footer__grid">
           <div className="footer__brand">
             <div className="footer__brand-name">
-              <span className="header__logo-mark">K</span>
-              KMS Wholesale
+              <Wordmark className="wordmark wordmark--lg" />
             </div>
             <p>
               The wholesale network where surplus meets demand. Forty years
@@ -21,7 +21,7 @@ export default function Footer() {
             <ul className="footer__links">
               <li><Link href="/buy">Apply to buy</Link></li>
               <li><Link href="/sell">Apply to sell</Link></li>
-              <li><Link href="/contact">Join KMS</Link></li>
+              <li><Link href="/contact">Join kms.deals</Link></li>
             </ul>
           </div>
 
@@ -45,7 +45,7 @@ export default function Footer() {
         </div>
 
         <div className="footer__bottom">
-          <span>&copy; {new Date().getFullYear()} KMS Wholesale</span>
+          <span>&copy; {new Date().getFullYear()} kms.deals</span>
           <span>Westland, Michigan</span>
         </div>
       </div>

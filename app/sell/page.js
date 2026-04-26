@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "For sellers — KMS Wholesale",
+  title: "For sellers — kms.deals",
   description:
-    "Unlock new revenue streams for all your inventory. KMS provides distribution channels for surplus and wholesale inventory without sacrificing brand protection or margin.",
+    "Unlock new revenue streams for all your inventory. kms.deals provides distribution channels for surplus and wholesale inventory without sacrificing brand protection or margin.",
 };
 
 export default function SellPage() {
@@ -16,13 +16,13 @@ export default function SellPage() {
             <span className="eyebrow-hero__label">For sellers</span>
             <h1>Unlock new revenue streams for all your inventory.</h1>
             <p>
-              KMS provides new distribution channels for surplus and
+              kms.deals provides new distribution channels for surplus and
               wholesale inventory, allowing sellers to move product quickly
               without sacrificing brand protection or margin.
             </p>
             <div className="eyebrow-hero__actions">
               <Link href="/contact" className="btn btn--primary btn--large">
-                Sell on KMS
+                Sell on kms.deals
               </Link>
               <Link href="/buy" className="btn btn--secondary btn--large">
                 For buyers
@@ -36,7 +36,7 @@ export default function SellPage() {
       <section className="pillars" style={{ borderTop: "1px solid var(--border-subtle)" }}>
         <div className="container">
           <div className="pillars__header">
-            <h2>Why sellers choose KMS.</h2>
+            <h2>Why sellers choose kms.deals.</h2>
             <p>Four ways the network turns surplus into revenue.</p>
           </div>
 
@@ -68,7 +68,7 @@ export default function SellPage() {
               <div className="pillars__title">Sell with absolute discretion</div>
               <p className="pillars__desc">
                 The network is only accessible to vetted members — we&apos;ll
-                never publish who buys and sells on KMS.
+                never publish who buys and sells on kms.deals.
               </p>
               <Link href="/contact" className="pillars__link">
                 Get started <span className="arrow">→</span>
@@ -100,7 +100,7 @@ export default function SellPage() {
             <div className="testimonial">
               <p className="testimonial__quote">
                 We weren&apos;t willing to be associated with off-price
-                markets, and KMS gives us peace of mind regarding buyer
+                markets, and kms.deals gives us peace of mind regarding buyer
                 identity and product destination.
               </p>
               <div className="testimonial__attribution">
@@ -110,7 +110,7 @@ export default function SellPage() {
             </div>
             <div className="testimonial">
               <p className="testimonial__quote">
-                KMS has enabled discovery of untapped revenue channels and
+                kms.deals has enabled discovery of untapped revenue channels and
                 distribution approaches we&apos;d never considered.
               </p>
               <div className="testimonial__attribution">
@@ -120,7 +120,7 @@ export default function SellPage() {
             </div>
             <div className="testimonial">
               <p className="testimonial__quote">
-                We needed efficient excess-inventory solutions, and KMS
+                We needed efficient excess-inventory solutions, and kms.deals
                 finally delivers the streamlined operations we require.
               </p>
               <div className="testimonial__attribution">
@@ -140,7 +140,7 @@ export default function SellPage() {
             <p>Apply as a trusted buyer or seller and get started today.</p>
             <div className="cta__actions cta__actions--multi">
               <Link href="/contact" className="btn btn--primary btn--large">
-                Sell on KMS
+                Sell on kms.deals
               </Link>
               <Link href="/buy" className="btn btn--secondary btn--large">
                 Apply to buy

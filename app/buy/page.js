@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "For buyers — KMS Wholesale",
+  title: "For buyers — kms.deals",
   description:
-    "Access to the world's best inventory. KMS connects established brands and global retailers through trusted, intelligent inventory distribution.",
+    "Access to the world's best inventory. kms.deals connects established brands and global retailers through trusted, intelligent inventory distribution.",
 };
 
 export default function BuyPage() {
@@ -22,7 +22,7 @@ export default function BuyPage() {
             </p>
             <div className="eyebrow-hero__actions">
               <Link href="/contact" className="btn btn--primary btn--large">
-                Buy on KMS
+                Buy on kms.deals
               </Link>
               <Link href="/sell" className="btn btn--secondary btn--large">
                 For sellers
@@ -99,7 +99,7 @@ export default function BuyPage() {
           <div className="testimonials__grid">
             <div className="testimonial">
               <p className="testimonial__quote">
-                KMS&apos;s seamless transactions and incredible logistics
+                kms.deals&apos; seamless transactions and incredible logistics
                 support empower me to close more deals than ever before.
               </p>
               <div className="testimonial__attribution">
@@ -109,7 +109,7 @@ export default function BuyPage() {
             </div>
             <div className="testimonial">
               <p className="testimonial__quote">
-                KMS is the most impactful surplus disrupter I&apos;ve seen
+                kms.deals is the most impactful surplus disrupter I&apos;ve seen
                 in twenty-five years in this business.
               </p>
               <div className="testimonial__attribution">
@@ -119,7 +119,7 @@ export default function BuyPage() {
             </div>
             <div className="testimonial">
               <p className="testimonial__quote">
-                Access to KMS&apos;s inventory of sought-after brands has
+                Access to kms.deals&apos; inventory of sought-after brands has
                 fueled a remarkable surge in my business.
               </p>
               <div className="testimonial__attribution">
@@ -142,7 +142,7 @@ export default function BuyPage() {
             </p>
             <div className="cta__actions cta__actions--multi">
               <Link href="/contact" className="btn btn--primary btn--large">
-                Buy on KMS
+                Buy on kms.deals
               </Link>
               <Link href="/contact" className="btn btn--secondary btn--large">
                 Apply to buy

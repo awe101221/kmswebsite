@@ -2,9 +2,9 @@ import ContactForm from "../components/ContactForm";
 import Icon from "../components/Icon";
 
 export const metadata = {
-  title: "Contact — KMS Wholesale",
+  title: "Contact — kms.deals",
   description:
-    "Get in touch with KMS Wholesale. Whether you're connecting to buy, sell, or need support — our team responds fast.",
+    "Get in touch with kms.deals. Whether you're connecting to buy, sell, or need support — our team responds fast.",
 };
 
 export default function ContactPage() {

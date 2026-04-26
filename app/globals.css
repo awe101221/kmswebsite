@@ -1,5 +1,5 @@
 /* ===========================
-   KMS Wholesale — Attio-inspired design system
+   kms.deals — Attio-inspired design system
    Neutral surfaces, hairline borders, tight type, single accent.
    =========================== */
 
@@ -22,7 +22,7 @@
   --text-tertiary:  #A3A3A3;
   --text-inverse:   #FAFAFA;
 
-  /* Accent — KMS brand blue, single accent across the system */
+  /* Accent — brand blue, single accent across the system */
   --accent-50:  #E6F7FE;
   --accent-100: #BFEBFC;
   --accent-500: #00AEEF;
@@ -320,25 +320,42 @@ main { display: block; }
 .header__logo {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: -0.015em;
   color: var(--text-primary);
+  transition: opacity var(--dur-fast) var(--ease-out);
 }
+.header__logo:hover { opacity: 0.85; }
 
-.header__logo-mark {
+/* ===========================
+   Wordmark — kms•deals
+   =========================== */
+.wordmark {
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 22px;
-  height: 22px;
-  border-radius: var(--radius-sm);
-  background: var(--accent-500);
-  color: var(--accent-fg);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  align-items: baseline;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: var(--text-primary);
+  font-feature-settings: "ss01", "cv11";
+}
+.wordmark__dot {
+  display: inline-block;
+  width: 0.34em;
+  height: 0.34em;
+  margin: 0 0.06em;
+  color: var(--accent-500);
+  flex-shrink: 0;
+  align-self: center;
+  transform: translateY(0.18em);
+}
+.wordmark--lg {
+  font-size: 18px;
+  letter-spacing: -0.035em;
+}
+.wordmark--xl {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  letter-spacing: -0.04em;
+  font-weight: 600;
 }
 
 .header__nav {

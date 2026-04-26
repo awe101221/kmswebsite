@@ -14,13 +14,13 @@ export default function Home() {
             </h1>
 
             <p className="hero__subtitle">
-              KMS is a relationship-native distribution network for the
+              kms.deals is a relationship-native distribution network for the
               world&apos;s best brands and the buyers who move their inventory.
             </p>
 
             <div className="hero__actions">
               <Link href="/contact" className="btn btn--primary btn--large">
-                Join KMS
+                Join kms.deals
               </Link>
               <Link href="/company" className="btn btn--secondary btn--large">
                 Learn more
@@ -46,7 +46,7 @@ export default function Home() {
               <div className="value-band__metric tabular">1,000+</div>
               <div className="value-band__title">Connected partners</div>
               <p className="value-band__desc">
-                Leading brands and retailers move inventory through KMS with
+                Leading brands and retailers move inventory through kms.deals with
                 built-in controls and brand protection.
               </p>
             </div>
@@ -130,7 +130,7 @@ export default function Home() {
               <div className="pillars__title">Sell with absolute discretion</div>
               <p className="pillars__desc">
                 Our network is only accessible to vetted buyers — we&apos;ll
-                never publish who buys and sells on KMS.
+                never publish who buys and sells on kms.deals.
               </p>
               <Link href="/sell" className="pillars__link">
                 Get started <span className="arrow">→</span>
@@ -224,7 +224,7 @@ export default function Home() {
             <div className="testimonial">
               <p className="testimonial__quote">
                 We weren&apos;t willing to be associated with off-price
-                markets, and KMS gives us peace of mind regarding buyer
+                markets, and kms.deals gives us peace of mind regarding buyer
                 identity and product destination.
               </p>
               <div className="testimonial__attribution">
@@ -234,7 +234,7 @@ export default function Home() {
             </div>
             <div className="testimonial">
               <p className="testimonial__quote">
-                KMS has enabled discovery of untapped revenue channels and
+                kms.deals has enabled discovery of untapped revenue channels and
                 distribution approaches we&apos;d never considered.
               </p>
               <div className="testimonial__attribution">
@@ -244,7 +244,7 @@ export default function Home() {
             </div>
             <div className="testimonial">
               <p className="testimonial__quote">
-                We needed efficient excess-inventory solutions, and KMS
+                We needed efficient excess-inventory solutions, and kms.deals
                 finally delivers the streamlined operations we require.
               </p>
               <div className="testimonial__attribution">
@@ -267,7 +267,7 @@ export default function Home() {
             </p>
             <div className="cta__actions cta__actions--multi">
               <Link href="/contact" className="btn btn--primary btn--large">
-                Join KMS
+                Join kms.deals
               </Link>
               <Link href="/buy" className="btn btn--secondary btn--large">
                 Apply to buy

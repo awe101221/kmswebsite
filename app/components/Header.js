@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import Wordmark from './Wordmark';
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -23,9 +24,8 @@ export default function Header() {
     <>
       <header className="header">
         <div className="header__inner">
-          <Link href="/" className="header__logo">
-            <span className="header__logo-mark">K</span>
-            KMS
+          <Link href="/" className="header__logo" aria-label="kms.deals home">
+            <Wordmark />
           </Link>
 
           <nav className="header__nav">
@@ -42,7 +42,7 @@ export default function Header() {
 
           <div className="header__cta">
             <Link href="/contact" className="btn btn--secondary">Sign in</Link>
-            <Link href="/contact" className="btn btn--primary">Join KMS</Link>
+            <Link href="/contact" className="btn btn--primary">Join kms.deals</Link>
           </div>
 
           <button
@@ -76,7 +76,7 @@ export default function Header() {
             style={{ marginTop: 8 }}
             onClick={() => setMobileOpen(false)}
           >
-            Join KMS
+            Join kms.deals
           </Link>
         </div>
       )}

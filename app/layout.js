@@ -10,12 +10,12 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "KMS Wholesale — Surplus, connected.",
+  title: "kms.deals — Surplus, connected.",
   description:
     "The wholesale network where surplus meets demand. 40+ years connecting retailers, distributors, and manufacturers.",
   keywords: "wholesale, surplus inventory, liquidation, off-price, distribution",
   openGraph: {
-    title: "KMS Wholesale — Surplus, connected.",
+    title: "kms.deals — Surplus, connected.",
     description:
       "The trusted platform for off-price wholesale. $2B+ in transactions completed.",
     type: "website",
