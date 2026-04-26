@@ -11,8 +11,8 @@ export default function Footer() {
               KMS Wholesale
             </div>
             <p>
-              The wholesale network where surplus meets demand.
-              40+ years of connecting the right inventory with the right buyers.
+              The wholesale network where surplus meets demand. Forty years
+              of connecting the right inventory with the right buyers.
             </p>
           </div>
 
@@ -45,7 +45,7 @@ export default function Footer() {
         </div>
 
         <div className="footer__bottom">
-          <span>&copy; {new Date().getFullYear()} KMS Wholesale. All rights reserved.</span>
+          <span>&copy; {new Date().getFullYear()} KMS Wholesale</span>
           <span>Westland, Michigan</span>
         </div>
       </div>

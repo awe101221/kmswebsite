@@ -5,16 +5,8 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 export default function Header() {
-  const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener('scroll', handleScroll);
-    handleScroll();
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   useEffect(() => {
     setMobileOpen(false);
@@ -49,15 +41,15 @@ export default function Header() {
           </nav>
 
           <div className="header__cta">
-            <Link href="/contact" className="btn btn--primary">
-              Connect
-            </Link>
+            <Link href="/contact" className="btn btn--secondary">Sign in</Link>
+            <Link href="/contact" className="btn btn--primary">Connect</Link>
           </div>
 
           <button
             className="header__mobile-toggle"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle navigation"
+            aria-expanded={mobileOpen}
           >
             <span />
             <span />
@@ -81,6 +73,7 @@ export default function Header() {
           <Link
             href="/contact"
             className="btn btn--primary"
+            style={{ marginTop: 8 }}
             onClick={() => setMobileOpen(false)}
           >
             Connect

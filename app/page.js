@@ -1,9 +1,10 @@
 import Link from "next/link";
+import Icon from "./components/Icon";
 
 export default function Home() {
   return (
     <>
-      {/* ===== HERO ===== */}
+      {/* Hero */}
       <section className="hero">
         <div className="container">
           <div className="hero__content">
@@ -20,23 +21,23 @@ export default function Home() {
 
             <p className="hero__subtitle">
               KMS is the wholesale network where surplus meets demand.
-              Plug in to access data-driven deal matching, powered by
-              40&nbsp;years of market intelligence and relationships.
+              Plug in to data-driven deal matching, powered by forty years
+              of market intelligence.
             </p>
 
             <div className="hero__actions">
               <Link href="/buy" className="btn btn--primary btn--large">
-                Find Deals
+                Find deals
               </Link>
               <Link href="/sell" className="btn btn--secondary btn--large">
-                Sell Inventory
+                Sell inventory
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ===== STATS ===== */}
+      {/* Stats */}
       <section className="stats">
         <div className="container">
           <div className="stats__grid">
@@ -47,7 +48,7 @@ export default function Home() {
               { number: "1,000s", label: "Connected partners" },
             ].map((stat) => (
               <div key={stat.label} className="stats__item">
-                <div className="stats__number">{stat.number}</div>
+                <div className="stats__number tabular">{stat.number}</div>
                 <div className="stats__label">{stat.label}</div>
               </div>
             ))}
@@ -55,7 +56,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== BENTO — TWO SIDES ===== */}
+      {/* Bento — two sides */}
       <section className="bento">
         <div className="container">
           <div className="bento__header">
@@ -67,14 +68,12 @@ export default function Home() {
           </div>
 
           <div className="bento__grid">
-            {/* Buyers */}
             <div className="bento__cell">
-              <div className="bento__cell-label">For Buyers</div>
+              <div className="bento__cell-label">For buyers</div>
               <h3>Deals matched to your categories.</h3>
               <p>
-                Tell us what you need. Our data-driven platform matches you
-                with relevant, value-driven products across 50+ categories.
-                New deals surface daily — tuned to your business.
+                Tell us what you need. Our platform surfaces relevant
+                inventory across 50+ categories — tuned to your business.
               </p>
               <ul className="bento__features">
                 <li>Category-specific deal matching</li>
@@ -87,14 +86,12 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Sellers */}
             <div className="bento__cell">
-              <div className="bento__cell-label">For Sellers</div>
+              <div className="bento__cell-label">For sellers</div>
               <h3>Your inventory, instantly connected.</h3>
               <p>
                 Connect your surplus into a network of thousands of active
-                buyers. We evaluate fast, price fairly, and move product
-                faster than anyone in the industry.
+                buyers. Fast quotes, fair prices, faster pickup.
               </p>
               <ul className="bento__features">
                 <li>Instant access to the buyer network</li>
@@ -107,23 +104,22 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Stats row */}
-            <div className="bento__cell">
-              <div className="bento__cell-label">Buyer Network</div>
-              <h3>50+</h3>
-              <p>Active categories with daily new arrivals surfaced to match your buying profile.</p>
+            <div className="bento__cell bento__cell--metric">
+              <div className="bento__cell-label">Buyer network</div>
+              <h3 className="tabular">50+</h3>
+              <p>Active categories with daily new arrivals matched to your buying profile.</p>
             </div>
 
-            <div className="bento__cell">
-              <div className="bento__cell-label">Seller Network</div>
-              <h3>97%</h3>
-              <p>Partner retention rate. Once you connect, you stay connected.</p>
+            <div className="bento__cell bento__cell--metric">
+              <div className="bento__cell-label">Seller network</div>
+              <h3 className="tabular">97%</h3>
+              <p>Partner retention. Once you connect, you stay connected.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ===== FEATURES ===== */}
+      {/* Features */}
       <section className="features">
         <div className="container">
           <div className="features__header">
@@ -137,38 +133,40 @@ export default function Home() {
           <div className="features__grid">
             {[
               {
-                icon: "🔗",
-                title: "Deep Relationships",
+                icon: "link",
+                title: "Deep relationships",
                 desc: "Direct connections with retailers, manufacturers, and distributors you won't find on any marketplace.",
               },
               {
-                icon: "📊",
-                title: "Market Intelligence",
-                desc: "40 years of pricing data and trend analysis power smarter decisions for every transaction.",
+                icon: "barChart",
+                title: "Market intelligence",
+                desc: "Forty years of pricing data and trend analysis power smarter decisions on every transaction.",
               },
               {
-                icon: "⚡",
-                title: "Speed to Market",
+                icon: "zap",
+                title: "Speed to market",
                 desc: "From quote to pickup in days, not weeks. Our 1M+ sq ft facility handles any volume.",
               },
               {
-                icon: "🛡️",
-                title: "Brand Protection",
+                icon: "shield",
+                title: "Brand protection",
                 desc: "Confidential handling for brands that need controlled distribution and discretion.",
               },
               {
-                icon: "🌐",
-                title: "National Scale",
+                icon: "globe",
+                title: "National scale",
                 desc: "Operations spanning coast to coast with logistics support for any size shipment.",
               },
               {
-                icon: "🤝",
-                title: "Dedicated Support",
+                icon: "users",
+                title: "Dedicated support",
                 desc: "A named account manager for every partner. Real people, real answers, every time.",
               },
             ].map((feature) => (
               <div key={feature.title} className="features__item">
-                <div className="features__item-icon">{feature.icon}</div>
+                <div className="features__item-icon">
+                  <Icon name={feature.icon} size={16} />
+                </div>
                 <h3>{feature.title}</h3>
                 <p>{feature.desc}</p>
               </div>
@@ -177,7 +175,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== HOW IT WORKS ===== */}
+      {/* How it works */}
       <section className="steps">
         <div className="container">
           <div className="steps__header">
@@ -195,16 +193,16 @@ export default function Home() {
               {
                 step: "2",
                 title: "Match",
-                desc: "Our team uses 40 years of market data to match you with the right deals or buyers.",
+                desc: "Our team uses forty years of market data to match you with the right deals or buyers.",
               },
               {
                 step: "3",
                 title: "Transact",
-                desc: "Close deals with confidence. We handle logistics, paperwork, and everything in between.",
+                desc: "Close deals with confidence. We handle logistics, paperwork, and everything between.",
               },
             ].map((item) => (
               <div key={item.step} className="steps__item">
-                <div className="steps__number">{item.step}</div>
+                <div className="steps__number tabular">{item.step}</div>
                 <h3>{item.title}</h3>
                 <p>{item.desc}</p>
               </div>
@@ -213,7 +211,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== CTA ===== */}
+      {/* CTA */}
       <section className="cta">
         <div className="container">
           <div className="cta__inner">
@@ -223,11 +221,11 @@ export default function Home() {
               advantage. Plug into the network.
             </p>
             <div className="cta__actions">
-              <Link href="/contact" className="btn btn--white btn--large">
-                Get Started
+              <Link href="/contact" className="btn btn--primary btn--large">
+                Get started
               </Link>
-              <Link href="/sell" className="btn btn--outline-white btn--large">
-                Get a Quote
+              <Link href="/sell" className="btn btn--secondary btn--large">
+                Get a quote
               </Link>
             </div>
           </div>

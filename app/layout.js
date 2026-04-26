@@ -1,20 +1,21 @@
-import { Geist } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata = {
-  title: "KMS Wholesale | Your Inventory, Connected",
+  title: "KMS Wholesale — Surplus, connected.",
   description:
-    "KMS is the network where surplus meets demand. Over 40 years connecting retailers, distributors, and manufacturers with the inventory they need.",
+    "The wholesale network where surplus meets demand. 40+ years connecting retailers, distributors, and manufacturers.",
   keywords: "wholesale, surplus inventory, liquidation, off-price, distribution",
   openGraph: {
-    title: "KMS Wholesale | Your Inventory, Connected",
+    title: "KMS Wholesale — Surplus, connected.",
     description:
       "The trusted platform for off-price wholesale. $2B+ in transactions completed.",
     type: "website",
@@ -23,7 +24,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={geistSans.variable}>
+    <html lang="en" className={inter.variable}>
       <body>
         <Header />
         <main>{children}</main>
