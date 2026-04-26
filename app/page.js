@@ -262,7 +262,7 @@ export default function Home() {
       <section className="cta">
         <div className="container">
           <div className="cta__inner">
-            <h2>The future of off-price wholesale is connected.</h2>
+            <h2>The future of off-price is connected.</h2>
             <p>
               Apply as a trusted buyer or seller and plug into the network
               today.
