@@ -10,9 +10,9 @@ export default function Home() {
         <div className="container">
           <div className="hero__content">
             <h1 className="hero__title">
-              Powering the off-price
+              Powering the
               <br />
-              wholesale economy.
+              off-price economy.
             </h1>
 
             <p className="hero__subtitle">
