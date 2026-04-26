@@ -19,6 +19,10 @@ const PATHS = {
   mapPin: <><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z" /><circle cx="12" cy="10" r="3" /></>,
   clock: <><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></>,
 
+  // nav
+  uploadCloud: <><path d="M16 16l-4-4-4 4M12 12v9" /><path d="M20 16.6A5 5 0 0 0 18 7h-1.3A8 8 0 1 0 4 15.3" /><path d="M16 16l-4-4-4 4" /></>,
+  building: <><rect x="4" y="2" width="16" height="20" rx="2" /><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01M8 10h.01M16 10h.01M12 10h.01M8 14h.01M16 14h.01M12 14h.01" /></>,
+
   // categories — kept generic and monochrome
   shirt: <path d="M16 3l-2 2-2 2-2-2-2-2-5 3 2 5h2v9h10v-9h2l2-5-5-3z" />,
   footprints: <><path d="M5 14a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" /><path d="M19 6a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" /><path d="M7 22h0c-1.7 0-3-1.3-3-3v-1c0-.6.4-1 1-1h4c.6 0 1 .4 1 1v1c0 1.7-1.3 3-3 3z" /><path d="M17 14h0c-1.7 0-3-1.3-3-3v-1c0-.6.4-1 1-1h4c.6 0 1 .4 1 1v1c0 1.7-1.3 3-3 3z" /></>,
