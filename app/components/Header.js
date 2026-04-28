@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Wordmark from './Wordmark';
@@ -9,6 +9,10 @@ import Icon from './Icon';
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
+
+  useEffect(() => {
+    setMobileOpen(false);
+  }, [pathname]);
 
   const links = [
     { href: '/sell', label: 'Sellers', icon: 'uploadCloud' },
@@ -46,7 +50,7 @@ export default function Header() {
 
           <button
             className="header__mobile-toggle"
-            onClick={() => setMobileOpen((open) => !open)}
+            onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle navigation"
             aria-expanded={mobileOpen}
           >
@@ -72,7 +76,8 @@ export default function Header() {
           ))}
           <Link
             href="/contact"
-            className="btn btn--primary mobile-nav__cta"
+            className="btn btn--primary"
+            style={{ marginTop: 8 }}
             onClick={() => setMobileOpen(false)}
           >
             Join kms.deals
